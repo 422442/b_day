@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🎮 HIMANSHU'S EPIC BIRTHDAY QUEST 🎮</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="scanlines"></div>
+    <div class="crt-overlay"></div>
+    
+    <!-- Power On Screen -->
+    <div id="powerScreen" class="power-screen">
+        <div class="power-button" onclick="powerOn()">
+            <div class="power-icon">⚡</div>
+            <div class="power-text">PRESS TO POWER ON</div>
+        </div>
+    </div>
+
+    <!-- Loading Screen -->
+    <div id="loadingScreen" class="loading-screen hidden">
+        <div class="loading-content">
+            <div class="pixel-loader"></div>
+            <div class="loading-text">LOADING BIRTHDAY QUEST...</div>
+            <div class="loading-bar">
+                <div class="loading-progress"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Game Screen -->
+    <div id="gameScreen" class="game-screen hidden">
+        <!-- Header -->
+        <header class="game-header">
+            <div class="score-board">
+                <span class="score">SCORE: <span id="score">0</span></span>
+                <span class="lives">LIVES: ❤️❤️❤️</span>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="game-world">
+            <!-- Floating Coins -->
+            <div class="floating-coins"></div>
+            
+            <!-- Birthday Message -->
+            <div class="birthday-message">
+                <h1 class="glitch-text" data-text="HAPPY BIRTHDAY">HAPPY BIRTHDAY</h1>
+                <h2 class="player-name">PLAYER: HIMANSHU</h2>
+                <div class="level-complete">🎂 LEVEL UP! NEW AGE UNLOCKED! 🎂</div>
+            </div>
+
+            <!-- Interactive Elements -->
+            <div class="game-elements">
+                <!-- Power-ups -->
+                <div class="powerup powerup-1" onclick="collectPowerup(this)">🍄</div>
+                <div class="powerup powerup-2" onclick="collectPowerup(this)">⭐</div>
+                <div class="powerup powerup-3" onclick="collectPowerup(this)">💎</div>
+                
+                <!-- Birthday Cake Boss -->
+                <div class="birthday-boss">
+                    <div class="boss-health">
+                        <div class="health-bar">
+                            <div class="health-fill"></div>
+                        </div>
+                        <span>BIRTHDAY CAKE BOSS</span>
+                    </div>
+                    <div class="cake-sprite" onclick="attackBoss()">
+                        🎂
+                        <div class="boss-eyes">👀</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Achievement Unlocked -->
+            <div id="achievement" class="achievement hidden">
+                <div class="achievement-icon">🏆</div>
+                <div class="achievement-text">
+                    <div class="achievement-title">ACHIEVEMENT UNLOCKED!</div>
+                    <div class="achievement-desc">Birthday Legend Status</div>
+                </div>
+            </div>
+        </main>
+
+        <!-- Game Controls -->
+        <div class="game-controls">
+            <button class="retro-btn" onclick="playBirthdaySound()">🎵 BIRTHDAY TUNE</button>
+            <button class="retro-btn" onclick="spawnFireworks()">🎆 FIREWORKS</button>
+            <button class="retro-btn" onclick="showMessage()">💌 SECRET MESSAGE</button>
+        </div>
+
+        <!-- Fireworks Container -->
+        <div class="fireworks-container"></div>
+    </div>
+
+    <!-- Secret Message Modal -->
+    <div id="messageModal" class="message-modal hidden">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>🎮 SPECIAL MESSAGE FROM THE GAME MASTER 🎮</h3>
+                <span class="close-btn" onclick="closeMessage()">&times;</span>
+            </div>
+            <div class="modal-body">
+                <p>Alo La Lo 🥔🥔🥔🥔</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
