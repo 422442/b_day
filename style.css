@@ -602,35 +602,352 @@ body {
 }
 
 /* Responsive Design */
+@media (max-width: 1024px) {
+    .birthday-boss {
+        bottom: 120px;
+        right: 20px;
+    }
+    
+    .powerup-1 {
+        top: 15%;
+        left: 5%;
+    }
+    
+    .powerup-2 {
+        top: 25%;
+        right: 10%;
+    }
+    
+    .powerup-3 {
+        bottom: 35%;
+        left: 15%;
+    }
+}
+
 @media (max-width: 768px) {
+    body {
+        overflow-x: hidden;
+    }
+    
     .glitch-text {
-        font-size: 24px;
+        font-size: 28px;
+        line-height: 1.2;
     }
     
     .player-name {
-        font-size: 16px;
+        font-size: 18px;
+        margin-bottom: 15px;
+    }
+    
+    .level-complete {
+        font-size: 14px;
+        padding: 0 10px;
+    }
+    
+    .birthday-message {
+        padding: 0 20px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+    
+    .game-controls {
+        flex-direction: column;
+        gap: 15px;
+        bottom: 20px;
+        width: 90%;
+        max-width: 300px;
+    }
+    
+    .retro-btn {
+        font-size: 10px;
+        padding: 12px 20px;
+        width: 100%;
+        white-space: nowrap;
+    }
+    
+    .birthday-boss {
+        bottom: 180px;
+        right: 20px;
+        left: auto;
+    }
+    
+    .cake-sprite {
+        font-size: 56px;
+    }
+    
+    .boss-health {
+        font-size: 8px;
+    }
+    
+    .health-bar {
+        width: 120px;
+        height: 12px;
+    }
+    
+    .powerup {
+        font-size: 28px;
+    }
+    
+    .powerup-1 {
+        top: 12%;
+        left: 8%;
+    }
+    
+    .powerup-2 {
+        top: 20%;
+        right: 8%;
+    }
+    
+    .powerup-3 {
+        bottom: 40%;
+        left: 12%;
+    }
+    
+    .game-header {
+        top: 10px;
+        left: 10px;
+        right: 10px;
+    }
+    
+    .score-board {
+        font-size: 10px;
+    }
+    
+    .modal-content {
+        width: 95%;
+        margin: 10px;
+    }
+    
+    .modal-header h3 {
+        font-size: 10px;
+    }
+    
+    .modal-body p {
+        font-size: 10px;
+    }
+    
+    .achievement {
+        width: 90%;
+        max-width: 350px;
+        padding: 20px;
+    }
+    
+    .achievement-title {
+        font-size: 12px;
+    }
+    
+    .achievement-desc {
+        font-size: 10px;
+    }
+    
+    .power-button {
+        padding: 20px;
+        margin: 20px;
+    }
+    
+    .power-icon {
+        font-size: 36px;
+        margin-bottom: 15px;
+    }
+    
+    .power-text {
+        font-size: 10px;
+    }
+    
+    .loading-text {
+        font-size: 12px;
+    }
+    
+    .loading-bar {
+        width: 250px;
+    }
+}
+
+@media (max-width: 480px) {
+    .glitch-text {
+        font-size: 20px;
+    }
+    
+    .player-name {
+        font-size: 14px;
     }
     
     .level-complete {
         font-size: 12px;
     }
     
+    .birthday-boss {
+        bottom: 160px;
+        right: 15px;
+        transform: scale(0.9);
+    }
+    
+    .cake-sprite {
+        font-size: 48px;
+    }
+    
+    .retro-btn {
+        font-size: 9px;
+        padding: 10px 15px;
+    }
+    
+    .powerup {
+        font-size: 24px;
+    }
+    
     .game-controls {
-        flex-direction: column;
+        bottom: 15px;
+        gap: 12px;
+    }
+    
+    .health-bar {
+        width: 100px;
+        height: 10px;
+    }
+    
+    .boss-health {
+        font-size: 7px;
+    }
+    
+    .achievement {
+        padding: 15px;
+    }
+    
+    .achievement-icon {
+        font-size: 36px;
+    }
+    
+    .achievement-title {
+        font-size: 10px;
+    }
+    
+    .achievement-desc {
+        font-size: 8px;
+    }
+    
+    .power-button {
+        padding: 15px;
+    }
+    
+    .power-icon {
+        font-size: 28px;
+    }
+    
+    .power-text {
+        font-size: 8px;
+    }
+    
+    .loading-bar {
+        width: 200px;
+    }
+    
+    .modal-header h3 {
+        font-size: 8px;
+    }
+    
+    .modal-body p {
+        font-size: 8px;
+    }
+}
+
+@media (max-width: 360px) {
+    .glitch-text {
+        font-size: 18px;
+    }
+    
+    .player-name {
+        font-size: 12px;
+    }
+    
+    .birthday-boss {
+        bottom: 140px;
+        right: 10px;
+        transform: scale(0.8);
+    }
+    
+    .game-controls {
+        width: 95%;
         gap: 10px;
     }
     
     .retro-btn {
         font-size: 8px;
-        padding: 10px 15px;
+        padding: 8px 12px;
+    }
+    
+    .powerup {
+        font-size: 20px;
+    }
+    
+    .powerup-1 {
+        top: 10%;
+        left: 5%;
+    }
+    
+    .powerup-2 {
+        top: 18%;
+        right: 5%;
+    }
+    
+    .powerup-3 {
+        bottom: 45%;
+        left: 8%;
+    }
+}
+
+/* Landscape orientation fixes for mobile */
+@media (max-height: 500px) and (orientation: landscape) {
+    .birthday-message {
+        transform: translate(-50%, -60%);
+    }
+    
+    .glitch-text {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+    
+    .player-name {
+        font-size: 12px;
+        margin-bottom: 10px;
+    }
+    
+    .level-complete {
+        font-size: 10px;
     }
     
     .birthday-boss {
-        bottom: 50px;
-        right: 50px;
+        bottom: 60px;
+        right: 20px;
+        transform: scale(0.7);
     }
     
-    .cake-sprite {
-        font-size: 48px;
+    .game-controls {
+        flex-direction: row;
+        gap: 10px;
+        bottom: 10px;
+    }
+    
+    .retro-btn {
+        font-size: 7px;
+        padding: 6px 10px;
+    }
+    
+    .powerup {
+        font-size: 18px;
+    }
+    
+    .powerup-1 {
+        top: 8%;
+        left: 5%;
+    }
+    
+    .powerup-2 {
+        top: 15%;
+        right: 5%;
+    }
+    
+    .powerup-3 {
+        bottom: 25%;
+        left: 8%;
     }
 }
